@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 200px;
+            text-align: center;
+        }
+        div:before,
+        div:after {
+            content: "";
+            display: block;
+            position: absolute;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+        div:before {
+            width: 40px;
+            height: 40px;
+            bottom: -20px;
+            right: 10px;
+        }
+        div:after {
+            width: 20px;
+            height: 20px;
+            bottom: -39px;
+            right: -8px;
+        }
+        /* 注意：
+            1. 因为小圆在 div 外部，所以 bottom 值肯定为负值。
+            2. 而小圆与 div 的竖直位置不一定，所以可为正值或负值。
+         */
+        /* 注意：伪类是包含在元素内的
+            1.  bottom 为 0 时，伪类的和 div 的 下边界接触；
+            2.  bottom 为正时，数越大，离 div 下边界越远，且方向向 div 内部；
+            3.  bottom 为负值时，远离 div 。
+       */
+    </style>
+</head>
+<body>
+    <div>大家好！</div>
+</body>
+</html>

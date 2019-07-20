@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            /* box-shadow: h-shadow v-shadow blur spread color inset; */
+            width: 200px;
+            height: 120px;
+            background-color: red;
+            margin: 20px;
+            float: left;
+            font-size: 15px;
+        }
+        div:nth-of-type(1) {
+            box-shadow: 30px 50px 0px 0px yellow;
+        }
+        div:nth-of-type(2) {
+            box-shadow: 30px 50px 10px 0px yellow;
+        }
+        div:nth-of-type(3) {
+            box-shadow: 30px 50px 0px 10px yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>box-shadow: 30px 50px 0px 0px yellow;</div>
+    <div>box-shadow: 30px 50px 10px 0px yellow;</div>
+    <div>box-shadow: 30px 50px 0px 10px yellow;</div>
+</body>
+</html>
